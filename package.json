@@ -1,0 +1,25 @@
+{
+  "name": "simpleweb",
+  "version": "1.0.0",
+  "description": "Simple Website",
+  "main": "app.js",
+  "scripts": {
+    "devRun": "nodemon app.js"
+  },
+  "author": "Zhenzhong Zhou",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "formidable": "^1.2.1",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.7",
+    "silly-datetime": "^0.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
