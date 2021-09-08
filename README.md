@@ -1,5 +1,5 @@
 #LittleAlbum
 
 ```
-npm install && npm run devStart
+npm install && npm run devRun
 ```
