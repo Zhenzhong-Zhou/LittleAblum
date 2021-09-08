@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
-const router = require('./controller');
+const router = require('./controller/router');
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
 
 users = [];
 connections = [];
 
-server.listen(process.env.PORT || 3000, '10.230.106.156');
-console.log("Server is running 3000");
+server.listen(3001);
+console.log("Server is running 3001");
 
 // Set modules engine
 app.set("view engine", "ejs");
@@ -64,6 +64,3 @@ io.sockets.on('connection', (socket) => {
         io.sockets.emit('get users', users);
     }
 });
-
-// app.listen(4000, '192.168.1.50');
-// console.log("Server is running.......");
